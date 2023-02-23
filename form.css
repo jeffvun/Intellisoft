@@ -1,0 +1,63 @@
+body{
+  font-family: 'Poppins';
+}
+form {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: 2px solid #270707;
+  border-radius: 5px;
+  background: #f4f4f4;
+}
+div{
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+#extras > div{
+  float: left;
+  width: 24%;
+}
+label{
+  display: block;
+  margin-bottom: 0px;
+  font-size: 14px;
+  font-weight: bold;
+}
+span{
+  display: inline;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: normal;
+}
+input{
+  width: 180px;
+  padding: 5px;
+  margin-right: 20px;
+  border-width: 0px 0px 1px 0px;
+  background: #fafafa;
+  border-radius: 5px;
+}
+input#age{
+  width: 40px;
+}
+input#sex, input#race{
+  width: 20px;
+  padding: 5px;
+  margin: 0 0 0 20px;
+}
+#place>div{
+  float: left;
+  width: 50%;
+}
+#place>div>input{
+  width: 250px;
+  margin-bottom: 10px;
+}
+#submit{
+  border:none;
+  background: #057a3a;
+  width: 140px;
+  padding: 10px;
+  border-radius: 10px;
+}

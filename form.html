@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <script src="form.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <title>Medical Form</title>
+</head>
+<body>
+    <main>
+        <form>
+            <h3>Medical Form</h3>
+            <h4>1. Patient Identifying Information</h4>
+            <div id="name">
+                <label for="name">Name: </label></br>
+                <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
+                <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
+                <input type="text" name="middlename" id="middlename" placeholder="Middle Name">
+            </div>
+            <div id="date">
+                <label for="dob">Date of Birth</label>
+                <input onmouseleave="calculateAge()" type="date" name="dob" id="dob" placeholder="" >
+            </div>
+            <div id="extras">
+                <div>
+                    <label for="phone">Sex: </label></br>
+                    <input type="radio" name="sex" id="sex" value="male">Male </br>
+                    <input type="radio" name="sex" id="sex" value="female">Female 
+                </div>
+                <div>
+                    <label for="phone">Age: </label>
+                    <input type="number" name="age" id="age" placeholder="21">
+                </div>
+                <div>
+                    <label for="phone">Race: </label>
+                    <input type="radio" name="race" id="race" value="white">White </br>
+                    <input type="radio" name="race" id="race" value="black">Black </br>
+                    <input type="radio" name="race" id="race" value="asian/pacific islander">Asian </br>
+                    <input type="radio" name="race" id="race" value="unknown">Unknown
+                    <input type="radio" name="race" id="race" value="other">Other
+                </div>
+                <div>
+                    <label for="phone">Hispanic or Latino: </label>
+                    <input type="radio" name="race" id="race" value="hispanic">Yes </br>
+                    <input type="radio" name="race" id="race" value=" ">No </br>
+                    <input type="radio" name="race" id="race" value=" ">Unknown
+                </div> 
+            </div>
+            <div id="place">
+                <div>
+                    <label for="phone">Facility: <span>if hospitalized</span></label> 
+                    <br>
+                    <input type="text" name="name" id="name" placeholder="Name">
+                    <input type="text" name="city" id="city" placeholder="City">
+                    <input type="text" name="county" id="county" placeholder="County">
+                    <input type="text" name="state" id="state" placeholder="State">
+                    <input type="tel" name="phone" id="phone" placeholder="0705431987">
+                    <label>Medical Record #:</label><input type="number" name="mrn" id="mrn" placeholder=" ">
+                </div>
+                <div>
+                    <label for="phone">Present Address: </label>
+                    <br>
+                    <input type="text" name="name2" id="name2" placeholder="Facility Name" required>
+                    <input type="text" name="street" id="street" placeholder="Street">
+                    <input type="text" name="city2" id="city2" placeholder="City" required>
+                    <input type="text" name="county2" id="county2" placeholder="County">
+                    <input type="text" name="state2" id="state2" placeholder="State">
+            </div>
+            <input name="submit" id="submit" type="submit" value="Submit">
+        </form>
+    </main>
+</body>
+</html>
